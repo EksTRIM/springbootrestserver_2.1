@@ -1,6 +1,9 @@
 package ua.logos.service;
 
+import ua.logos.entity.Book;
 import ua.logos.entity.User;
+
+import java.util.List;
 
 public interface UserService {
 
@@ -8,6 +11,6 @@ public interface UserService {
 
     User findById(Long id);
 
-
+    List<Book> findAllBooks();
 
 }
